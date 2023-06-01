@@ -1,0 +1,119 @@
+COMP40 Homework 4: arith
+
+Name: Yuma Takahashi (ytakah01) and Etha Hua (thua03)
+Acknowledgements: TA
+
+Total time: 11 hours of analyzing the problem, 16 hours of implementations and 
+solving the problems
+
+-------------------------------------------------------------------------------
+Files: 
+
+40image.c:
+    main interface where commands are passed in by the user and calls 
+    corresponding actions, such as compress or decompress. 
+
+a2plain.c:
+    a2plain is a "subclass" of A2Methods_T. Each of the functions here are 
+    private versions of the ones in A2Methods_T. a2plain is used when the client
+    wants to read/write through the array in row-major or column-major order.
+
+uarray2.c:
+    Implementation of the uarray2 interface. Implementation of an unboxed 2d 
+    array.
+
+compress40.c: 
+    Read in a valid ppm file to be processed using Pnm_ppmread()
+    Trim, if needed, the last column and/or the last row of the ppm.
+
+decompress40.c: 
+    Printout the decompressed ppm file using Pnm_ppmwrite(). The valid input 
+    compressed ppm file is a sequence of the 32 bit words with a specified 
+    header.
+
+rgbxyz.c:
+    Transforms the RGB information of all pixels in a UArray2 of Float_rgb’s 
+    into the corresponding XYZ format of the same pixels. ADDITIONALLY, 
+    Transforms the XYZ format into Float_rgb format which is stored in a 
+    UArray2.
+
+chromaTranform.c:
+    Determine the average chroma elements of the pixels for a 2x2 block by 
+    taking the average value of the four pixels in the block. ADDITIONALLY, 
+    set the chroma value for each 2x2 block in an UArray2 of struct XYZ by using
+    their average. 
+
+DCT_Quantization.c:
+    Transform the 4 luminance values into integer coefficients. Convert the 
+    average chroma elements into integers. ADDITIONALLY, Convert the indexed 
+    chroma elements back to float numbers, and convert the integer coefficient 
+    that represents the luminance values back to four luminance values in float 
+    numbers.
+
+bitpack.c:
+    Provide an instrument to store and get signed and unsigned integer values 
+    into a uint64_t word. 
+
+wordTransform.c:
+    Transform information contained in Bundle2 structs to a 32-bit word that 
+    contains the identical information (in a uint64_t variable). This step
+    is implemented with guide from bitpack.c
+    
+ppmdiff.c:
+    Compares two ppm files and printout their differences.
+
+Makefile: 
+    To compile the files and create an executable.
+    
+-------------------------------------------------------------------------------
+40image:
+    Build: make 40image
+    Run: ./40image [{-c,-d, -}] [filename]
+
+ppmdiff:
+    Build: make ppmdiff
+    Run: ./ppmdiff [image1name] [image2name]
+    
+-------------------------------------------------------------------------------
+Architecture:
+    40image module takes in a command entered by the user in 
+    the command line. It then determines whether the file passed in is to be 
+    compressed or decompressed. It calls the corresponding compress/decompress 
+    module.
+    
+    compress40 module handles the compression steps. It acts as a user of the 
+    more basic modules.
+    
+    decompress40 module handles the decompression steps. It also acts as a user
+    of the more basic modules.
+    
+    BASIC MODULES:
+    
+    rgbxyz module handles the transformation between the rgb float values in the 
+    pixels and the xyz format of the same values.
+    
+    chromaTranform module handles the averaging of chroma values of the xyz 
+    format and de-averaging of the averaged chroma values in the Bundle2 
+    struct. Moreover, it accounts for the change of array width and height as 
+    to contain the two data sets it converts from/to.
+
+    DCT_Quantization module handles the discrete cosine transformation between 
+    the component video color spaces and the coefficients. Furthermore, it also
+    handles the quantization and dequantization of those corresponding values.
+
+    bitpack module handles the storing and retrieving of the signed and unsigned
+    integer values from a uint64_t word.  
+    
+    wordTranform module handles transformation between information contained in
+    Bundle2 struct and identical information contained 32-bit word.
+    
+-------------------------------------------------------------------------------
+Help:
+    We received help from Devon on the issue of using the hanson mem.h and NEW
+    function, as well as including arith40 library.
+    
+-------------------------------------------------------------------------------
+Implementation Result:
+    We believe we have succuessfully implemented all functionalities according 
+    to the spec.
+    
