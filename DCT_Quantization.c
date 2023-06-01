@@ -1,8 +1,8 @@
 /*******************************************************************************
  *                               DCT_Quantization.c
  *
- *     Assignment: arith
- *     Authors:  Etha Hua(thua03), Yuma Takahashi (ytakah01)
+ *     arith
+ *     Author:   Yuma Takahashi
  *     Date:     October 27, 2021
  *
  *   Implementation of DCT_Quantization interface.

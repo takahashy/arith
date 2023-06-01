@@ -1,9 +1,9 @@
 /*******************************************************************************
  *                               decompress40.c
  *
- *     Assignment: arith
- *     Authors:  Etha Hua(thua03), Yuma Takahashi (ytakah01)
- *     Date:     October 27, 2021
+ *     arith
+ *     Author:  Yuma Takahashi
+ *     Date:    October 27, 2021
  *
  *     Implementation of the decompress interface
  *     Printout the decompressed ppm file using Pnm_ppmwrite(). The valid input 

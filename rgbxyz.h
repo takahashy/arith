@@ -1,9 +1,9 @@
 /*******************************************************************************
  *                               rgbxyz.h
  *
- *     Assignment: arith
- *     Authors:  Etha Hua(thua03), Yuma Takahashi (ytakah01)
- *     Date:     October 27, 2021
+ *     arith
+ *     Author:  Yuma Takahashi 
+ *     Date:    October 27, 2021
  *
  *     rgbxyz interface.
  *     Transforms the RGB information of all pixels in a UArray2 of Float_rgb’s 

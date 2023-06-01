@@ -1,10 +1,6 @@
-COMP40 Homework 4: arith
+arith
 
-Name: Yuma Takahashi (ytakah01) and Etha Hua (thua03)
-Acknowledgements: TA
-
-Total time: 11 hours of analyzing the problem, 16 hours of implementations and 
-solving the problems
+Name: Yuma Takahashi 
 
 -------------------------------------------------------------------------------
 Files: 
@@ -106,14 +102,4 @@ Architecture:
     
     wordTranform module handles transformation between information contained in
     Bundle2 struct and identical information contained 32-bit word.
-    
--------------------------------------------------------------------------------
-Help:
-    We received help from Devon on the issue of using the hanson mem.h and NEW
-    function, as well as including arith40 library.
-    
--------------------------------------------------------------------------------
-Implementation Result:
-    We believe we have succuessfully implemented all functionalities according 
-    to the spec.
     

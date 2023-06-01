@@ -1,9 +1,9 @@
 /*******************************************************************************
  *                               40image.c
  *
- *     Assignment: arith
- *     Authors:  Etha Hua(thua03), Yuma Takahashi (ytakah01)
- *     Date:     October 27, 2021
+ *     arith
+ *     Author:  Yuma Takahashi 
+ *     Date:    October 27, 2021
  *
  *         main interface where commands are passed in by the user and calls 
  *         corresponding actions, such as compress or decompress.  

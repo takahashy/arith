@@ -5,7 +5,7 @@
 
 /************************************************/
 /* Define a private version of each function in */
-/* A2Methods_T that we implement.               */
+/* A2Methods_T that was implemented.               */
 /************************************************/
 
 static A2Methods_UArray2 new(int width, int height, int size)

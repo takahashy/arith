@@ -1,9 +1,9 @@
 /*******************************************************************************
  *                               wordTransform.h
  *
- *     Assignment: arith
- *     Authors:  Etha Hua(thua03), Yuma Takahashi (ytakah01)
- *     Date:     October 27, 2021
+ *     arith
+ *     Author:  Yuma Takahashi 
+ *     Date:    October 27, 2021
  *
  *     wordTranform interface
  *     Transform information contained in Bundle2 structs to a 32-bit word that 

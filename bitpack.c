@@ -1,9 +1,9 @@
 /*******************************************************************************
  *                               bitpack.c
  *
- *     Assignment: arith
- *     Authors:  Etha Hua(thua03), Yuma Takahashi (ytakah01)
- *     Date:     October 27, 2021
+ *     arith
+ *     Author:  Yuma Takahashi
+ *     Date:    October 27, 2021
  *
  *     Implementation of the bitpack interface. Provide an instrument to store 
  *     and get signed and unsigned integeral values into a uint64_t word. 

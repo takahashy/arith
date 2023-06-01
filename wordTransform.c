@@ -1,9 +1,9 @@
 /*******************************************************************************
  *                               wordTransform.c
  *
- *     Assignment: arith
- *     Authors:  Etha Hua(thua03), Yuma Takahashi (ytakah01)
- *     Date:     October 27, 2021
+ *     arith
+ *     Author:  Yuma Takahashi 
+ *     Date:    October 27, 2021
  *
  *     Implementation of the wordTranform inteface.
  *     Transform information contained in Bundle2 structs to a 32-bit word that 

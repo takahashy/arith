@@ -1,4 +1,4 @@
-# Makefile for aritharith (Comp 40 Assignment 4)
+# Makefile for arith
 # 
 # Includes build rules for a2test and ppmtrans
 #

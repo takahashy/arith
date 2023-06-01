@@ -1,9 +1,9 @@
 /*******************************************************************************
  *                               chromaTranform.c
  *
- *     Assignment: arith
- *     Authors:  Etha Hua(thua03), Yuma Takahashi (ytakah01)
- *     Date:     October 27, 2021
+ *     arith
+ *     Author:  Yuma Takahashi
+ *     Date:    October 27, 2021
  *     
  *     Implementation of the chromaTranform interface
  *     Determine the average chroma elements of the pixels for a 2x2 block by 
